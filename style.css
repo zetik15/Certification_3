@@ -1,6 +1,30 @@
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(fonts/Gilroy-Medium.woff2);
+}
+
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url(fonts/Gilroy-Semibold.woff2);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(fonts/Gilroy-Bold.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 566px);
+    padding-right: calc(50% - 566px);
 }
 
 a {
@@ -14,25 +38,107 @@ a {
 .header {
     padding-top: 40px;
     padding-bottom: 84px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 .top__navigation {
     padding-top: 51px;
     padding-bottom: 96px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+
+.top__link {
+    color: #000;
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+    display: flex;
+    gap: 5px;
+}
+
+.top__content {
+    display: flex;
+    gap: 39px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
 }
 
 .top__info {
+    width: 522px;
     margin-bottom: 162px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .title {
+    width: 522px;
     margin-bottom: 17px;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: left;
 }
 
 .text {
+    color: #888888;
+    width: 466px;
     margin-bottom: 37px;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
 }
 
-.buttons {
+.top__buttons {
     margin-bottom: 162px;
+}
+
+.button_1 {
+    background-color: #F25822;
+    color: #FFFFFF;
+    font-family: Gilroy-Bold;
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 4px 4px 8px 0px #F2582233;
+    outline: none;
+    margin-right: 72px;
+}
+
+.button_2 {
+    color: #aaa;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+
+}
+
+.top__logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
 }
